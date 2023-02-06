@@ -1,0 +1,38 @@
+name: bank-2
+author: Arctic
+category: "crypto (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+  Using the funds you recovered we've gained access to the boss's secret email service, however we only have the ability to send emails to it
+
+  See if there's anything you can do
+
+  Guide: https://ctf.maplebacon.org/crypto_bank_2
+
+connection_info: nc bank-2.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{N07_50_5ECReT_5eCreT2}"
+
+tags:
+  - progression-break-2
+  - advanced
+
+files:
+  - deployment/challenge/challenge.py
+  - solve/template.py
+
+requirements:
+  - "bank-1"
+
+state: visible
+version: "0.1"

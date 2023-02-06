@@ -1,0 +1,66 @@
+name: "CPSC233 Assignment 2"
+author: aynakeya
+category: "pwn (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: aynakeya
+
+  CPSC233 Assignment 2 Instruction
+
+  In this assignment, you are going to apply your knowledge of syscalls.
+
+  Online Learning Resource:
+
+  1. x64 assembly reference: http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html
+
+  2. Exploring assembly language: https://godbolt.org/
+
+  3. x64 cheat sheet: https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+
+  4. syscall table: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/constants/syscalls.md
+
+  
+
+connection_info: nc cpsc233-assignment2.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{p21n71n9_1n_4445555mmmm}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - progression-2
+  - beginner
+
+files:
+  - static/main.c
+  - static/starter.py
+  - static/cpsc233_a2
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+requirements:
+  - "CPSC233 Assignment 1"
+
+state: visible
+version: "0.1"

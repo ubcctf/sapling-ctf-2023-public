@@ -1,0 +1,56 @@
+name: "CPSC233 Assignment 3"
+author: aynakeya
+category: "pwn (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: aynakeya
+
+  CPSC233 Assignment 3 Instruction
+
+  Practice shellcode writing with length limit.
+
+  (seems like anti-cheat didn't work properly, we've removed it from our system)
+
+connection_info: nc cpsc233-assignment3.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{r34d_5h3llc0d3_u51n6_5h3llc0d3}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - progression-4
+  - intermediate
+
+files:
+  - static/main.c
+  - static/starter.py
+  - static/cpsc233_a3
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+requirements:
+  - "CPSC233 Assignment 2"
+
+state: visible
+version: "0.1"

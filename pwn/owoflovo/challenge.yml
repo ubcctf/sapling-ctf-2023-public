@@ -1,0 +1,48 @@
+name: owoflovo
+author: aynakeya
+category: pwn
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: aynakeya\n\nProf. Owoflovo: OwO OuO O.O OvO owo ovo ouo o.o QwQ QAQ Q.Q"
+
+connection_info: nc owoflovo.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{ovo_ov3r_f1owwwww}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  # - progression (if progssion)
+  - beginner
+
+files:
+  - static/main.c
+  - static/owoflovo
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

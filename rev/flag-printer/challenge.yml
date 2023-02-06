@@ -1,0 +1,50 @@
+name: flag-printer
+author: desp
+category: rev
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: desp
+
+  Heh you think you can just print out my flag? I've intentionally broken my flag printer to *halt* your attempts!
+
+# connection_info: nc ctf.maplebacon.org <port>
+
+flags:
+  - "maple{r3v3r_0r_p4tch3r?}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - binary-patching
+  - intermediate
+
+files:
+  - players/flagprinter
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

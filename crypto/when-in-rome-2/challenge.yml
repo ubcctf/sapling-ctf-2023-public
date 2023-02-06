@@ -1,0 +1,34 @@
+name: when-in-rome-2
+author: Arctic
+category: crypto
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+  Now for a harder substitution cipher. We now have three substitution functions, each substituting one letter at a time.
+
+  You'll have to be a bit more clever to solve this one!
+
+  https://ctf.maplebacon.org/crypto_when_in_rome_2
+
+flags:
+  - "maple{trigrams_and_patterns_galore!}"
+
+tags:
+  - intermediate
+
+files:
+  - static/challenge.html
+
+requirements:
+  - "when-in-rome-1"
+
+state: visible
+version: "0.1"

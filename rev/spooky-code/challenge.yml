@@ -1,0 +1,50 @@
+name: spooky-code
+author: desp
+category: rev
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: desp
+
+  oOOooOOo why is the code segment so small oOOoOoOo where are the code hiding ooOOOoOo
+
+# connection_info: nc ctf.maplebacon.org <port>
+
+flags:
+  - "maple{sP0oKy_s3lf_m0d1fy1ng_c0de_4pp34r1ng_0ut_0f_n0wh3r3}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - dynamic-analysis
+  - advanced
+
+files:
+  - players/spooky
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

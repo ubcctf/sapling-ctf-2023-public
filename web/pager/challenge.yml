@@ -1,0 +1,24 @@
+name: pager
+author: crimist
+category: web
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+description: "Author: crimist\n\nSeems like your apartments IT guy left a long time ago... surely there's a way in to his system? Hint: The flag is at `/flag`"
+
+connection_info: http://pager.ctf.maplebacon.org
+flags:
+  - "maple{th3y_5h0uld_r34lly_h1re_n3w_it}"
+tags:
+  - web
+  - php
+  - intermediate
+files:
+  - static/pager.zip
+hints:
+  - "It seems like the server hasn't been updated in a while. I wonder if there's any old vulnerable software?"
+state: visible
+version: "0.1"

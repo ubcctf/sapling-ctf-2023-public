@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <title>Hint Bot</title>
+    </head>
+    <body>
+        <div
+            id="container"
+            >
+                <header style="font-size: 2rem; font-weight: 600;">
+                    Hint Bot
+                </header>
+                <div id="prompt-container">
+                    <p>
+                        Want to get some further guidance? Ask
+                        our hintbot!
+                    </p>
+                    <p>
+                        Note: we've been told by some users that they are not getting their
+                        hints due to misspellings... so we made our hintbot fuzzy.
+                    </p>
+                    <p>
+                        Note: Dont forget to look at the convenience indicator (The three bars on the left).  
+                        Press submit to check how far you are from the correct answer!                    </p>
+                </div>
+                <div id="element-container">
+                    <div class="signal-icon">
+                        <div class="signal-bar"></div>
+                        <div class="signal-bar"></div>
+                        <div class="signal-bar"></div>
+                    </div>
+                    <input
+                        type="text"
+                        id="input-bar"
+                        placeholder="Your Input"
+                        name="hint"
+                    />
+                    <button type="button" id="submit-btn">
+                        Submit
+                    </button>
+                </div>
+                <div id="sliding-prompt">
+                    <p id="msg"></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const hintElement = document.getElementById("input-bar");
+            const msgElement = document.getElementById("msg");
+            const signalElement = document.querySelector(".signal-icon");
+            const buttonElement = document.getElementById("submit-btn");
+            const websocketHost = "<%= websocketHost %> ";
+
+            function submitHint(ws, hint) {
+                // if closed, reopen
+                if (ws.readyState === 3) {
+                    ws = openWebsocket();
+                    ws.addEventListener("open", () => {
+                        ws.send(JSON.stringify({ msg: hint, debug: true }));
+                    });
+                } else {
+                    ws.send(JSON.stringify({ msg: hint, debug: true }));
+                }
+            }
+            function handleResponse(resp) {
+                try {
+                    const { msg, dist } = JSON.parse(resp);
+                    msgElement.innerText = msg;
+                    signalElement.classList.remove(
+                        "strong",
+                        "medium",
+                        "weak"
+                    );
+                    switch (true) {
+                        case parseInt(dist) > 8:
+                            break;
+                        case parseInt(dist) > 4:
+                            signalElement.classList.add("weak");
+                            break;
+                        case parseInt(dist) > 2:
+                            signalElement.classList.add("medium");
+                            break;
+                        default:
+                            signalElement.classList.add("strong");
+                            break;
+                    }
+                } catch (e) {
+                    console.log(e);
+                }
+            }
+            function openWebsocket() {
+                const newWS = new WebSocket(websocketHost);
+                newWS.onopen = function (e) {
+                    console.log("Connection established!");
+                };
+                newWS.onmessage = function (e) {
+                    handleResponse(e.data);
+                };
+                newWS.onerror = function (e) {
+                    console.log("Error: " + e);
+                };
+                newWS.onclose = function (e) {
+                    console.log("Connection closed");
+                };
+                return newWS;
+            }
+            buttonElement.addEventListener("click", (e) => {
+                submitHint(ws, hintElement.value);
+            });
+            hintElement.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    buttonElement.click();
+                }
+            });
+            let ws = openWebsocket();
+        </script>
+    </body>
+</html>

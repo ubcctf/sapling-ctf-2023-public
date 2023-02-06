@@ -1,0 +1,35 @@
+name: callback-2
+author: disna
+category: "web (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+connection_info: https://callback-2.ctf.maplebacon.org
+
+description: >
+  Author: Disna#0532
+
+  ah thanks for uh... responsibly... demonstrating this vulnerability to us. we've made it kinda impossible for anyone to pull useful xss anymore.
+
+flags:
+  - "maple{d4ng_d4ngl3r_d4ngl1ng_d4ngl3d_h7ml}"
+
+
+tags:
+  - progression-2
+  - beginner
+  - web
+
+files:
+  - static/callback-2.zip
+
+requirements:
+  - "callback"
+
+state: visible
+version: "0.1"

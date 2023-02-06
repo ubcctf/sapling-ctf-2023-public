@@ -1,0 +1,36 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Devious Naughty Stealing"
+author: "Dontmindme"
+category: "misc (progression)"
+description: "Author: Dontmindme\n\nWelcome to Misc. The following few challenges are linked in a similar story, however, this is no ordering to these challenges. Further, the techniques you will need to utilize to solve these challenges are completely unrelated. The only thing they all share? The need for a creative thinking, your knowledge of computing, and your willingness to learn. 
+
+We've just recovered some network logs from the compromised machine. We've learned from other sources that the hackers have stolen emails, files, and other data from this machine. Something we're still not entirely sure of is how the hackers managed to avoid getting detected by our firewalls. Why didn't they flag suspicious communications? Take a look at these logs and find out.
+
+You can use Wireshark to open this file. "
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+flags:
+- "maple{dns_eXfi1trati0n_of_data_15_a_real_pr0blem}"
+
+tags:
+  - progression-3
+  - intermediate
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+hints:
+  - "You should look at Wireshark's filtering features."
+files:
+    - static/logs.pcap
+
+state: visible
+version: "0.1"

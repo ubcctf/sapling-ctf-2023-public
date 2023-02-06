@@ -1,0 +1,27 @@
+name: la-culebra
+author: Vie
+category: web
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+connection_info: http://la-culebra.ctf.maplebacon.org:9090
+description: |
+  Author: Vie
+
+  Ya'll got any snake facts?
+flags:
+  - "maple{tH3res_4_snek_In_My_keY_valu3_dict!!}"
+
+tags:
+  - intermediate
+
+files:
+  - static/la-culebra.zip
+
+state: visible
+version: "0.1"

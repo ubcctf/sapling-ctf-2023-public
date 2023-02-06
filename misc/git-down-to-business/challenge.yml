@@ -1,0 +1,42 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Git Down to Business"
+author: "Dontmindme"
+category: "misc (progression)"
+description: "Author: Dontmindme\n\nWelcome to Misc. The following few challenges are linked in a similar story, however, this is no ordering to these challenges. Further, the techniques you will need to utilize to solve these challenges are completely unrelated. The only thing they all share? The need for a creative thinking, your knowledge of computing, and your willingness to learn. 
+
+We've managed to seize a malicious command and control (C2) server, which we believe was responsible for deploying malicious scripts onto the target machine. Among the files we found on the server are below, and we think there may be evidence here that we can use to get further into this evil network. Why don't you take a look at it and see if you can find something that could help us." 
+
+value: 500
+
+type: dynamic
+
+extra:
+
+  initial: 500
+
+  decay: 30 # based on last year sapling's solve counts
+
+  minimum: 50
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+
+# Can be removed if unused
+
+# Accepts strings or dictionaries of CTFd API data
+flags:
+- "maple{n0T_s0_s3cret_keY_4ft3r_4ll}"
+
+tags:
+  - progression-2
+  - beginner
+  
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - static/suspiciousfolder.zip
+
+state: visible
+version: "0.1"

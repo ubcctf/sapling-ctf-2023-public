@@ -1,0 +1,60 @@
+name: teenagejail
+author: desp
+category: misc
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: desp
+
+  time flew, and you are now a teenager ready to face the world of actual sandboxing!
+
+  will you be able to triumph over this too just like you did back in babyjail?
+
+  to deploy the local testing docker, run the following in the directory with both of the provided files:
+
+  sudo docker build . --tag teenagejail
+
+  sudo docker run --rm -it -t teenagejail
+
+connection_info: nc teenagejail.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{41n'7_py7h0n_r34l_fun?}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - pyjail
+  - advanced
+
+files:
+  - players/teenagejail.py
+  - players/Dockerfile
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+#babyjail-2 has a pretty different concept to this so its not a linear progression
+requirements:
+  - "babyjail"
+
+state: visible
+version: "0.1"

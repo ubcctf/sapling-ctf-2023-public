@@ -1,0 +1,33 @@
+name: cgame
+author: em
+category: "rev (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+description: |
+  Author: em
+
+  I found this game on an old disk in the basement, but not its manual.
+
+  I've heard you know how to reverse binaries---can you figure out what it's about?
+
+flags:
+  - "maple{saving_the_environment_1092899062}"
+
+tags:
+  - progression-4
+  - intermediate
+
+files:
+  - static/cgame
+
+requirements:
+  - "ai-art"
+
+state: visible
+version: "0.1"

@@ -1,0 +1,22 @@
+name: beehive
+author: crimist
+category: web
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+description: "Author: crimist\n\nYou've stumbled upon BeeHive login, chances are the password is impossible to guess. Hint: The flag is at `/flag`"
+
+connection_info: https://beehive.ctf.maplebacon.org
+flags:
+  - "maple{l0gg1ng_t0_cwd_5mh}"
+tags:
+  - web
+  - php
+  - beginner
+files:
+  - static/beehive.zip
+state: visible
+version: "0.1"

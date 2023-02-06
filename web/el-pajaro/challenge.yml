@@ -1,0 +1,30 @@
+name: el-pajaro
+author: Vie
+category: web
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+connection_info: https://el-pajaro.ctf.maplebacon.org
+
+description: |
+  Author: Vie
+
+  I made a bird API! Log in, and test it out :) NOTE: the flag is the email address of the admin account.
+flags:
+  - "maple{Birds_of_a_f3ath3r_fl0ck_together}"
+
+tags:
+  - beginner
+
+files:
+  - static/bird_api.zip
+  - static/build.sh
+  - static/Dockerfile
+
+state: visible
+version: "0.1"

@@ -1,0 +1,64 @@
+name: "CPSC233 Assignment 1"
+author: aynakeya
+category: "pwn (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: aynakeya
+
+  CPSC233 Assignment 1 Instruction
+
+  This is your first assignment, in this assignmnet, we are going to make a simple calculator using x64 asm.
+
+  Just create an asm function that takes 3 integers and return the sum of them.
+
+  Online Learning Resource:
+
+  1. x64 assembly reference: http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html
+
+  2. Exploring assembly language: https://godbolt.org/
+
+  3. x64 cheat sheet: https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+
+connection_info: nc cpsc233-assignment1.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{4_51mp13_c41cu14702}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - progression-1
+  - beginner
+
+files:
+  - static/main.c
+  - static/starter.py
+  - static/cpsc233_a1
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

@@ -1,0 +1,52 @@
+name: babyjail
+author: desp
+category: misc
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: desp
+
+  wow what a world we live in there are even jails for babies :(
+
+  surely you can exfiltrate the flag out of these 3 lines of code, right?
+
+connection_info: nc babyjail.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{50ln_l0n63r_7h4n_5rc?}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - pyjail
+  - beginner
+
+files:
+  - players/babyjail.py
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

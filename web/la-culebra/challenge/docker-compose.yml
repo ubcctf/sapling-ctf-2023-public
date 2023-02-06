@@ -1,0 +1,14 @@
+version: "3.9"
+
+# connect networks over host to share localhost to ensure
+# accurate replication of k8s pod
+
+services:
+  culebra:
+    build: .
+    ports:
+      - "9090:9090"
+    network_mode: "host"
+  redis:
+    image: "redis:alpine"
+    network_mode: "host"

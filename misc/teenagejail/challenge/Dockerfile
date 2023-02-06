@@ -1,0 +1,11 @@
+FROM ubuntu:20.04
+
+RUN apt update && apt install -y python3 socat
+
+RUN /usr/sbin/useradd --no-create-home -u 1000 user
+
+#works with os.setuid(1000) to make sure file is unreadable by the time user code is run
+COPY teenagejail.py /
+RUN chmod 600 /teenagejail.py
+
+CMD ["socat", "TCP-LISTEN:1337,fork,reuseaddr", "EXEC:'python3 /teenagejail.py',stderr"]

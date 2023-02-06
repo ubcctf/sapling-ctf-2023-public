@@ -1,0 +1,58 @@
+name: "EAS: basic"
+author: aynakeya
+category: pwn
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: aynakeya
+
+  Echo As Service
+
+  echo is a pretty useful function, so I made echo as a service!
+
+  Changelog:
+
+  v0.1: add a while loop to my service.
+
+  v0.0: echo service prototype.
+
+connection_info: nc echo-basic.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{prprprpr1n7f}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  # - progression (if progssion)
+  - beginner
+
+files:
+  - static/echo_basic
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+requirements:
+  - "EAS: intro"
+
+state: visible
+version: "0.1"

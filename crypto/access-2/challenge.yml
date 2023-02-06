@@ -1,0 +1,36 @@
+name: access-2
+author: Arctic
+category: "crypto (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+    We successfully got access for a few hours thanks to your hard work but they quickly realized the security flaw you exploited and revoked everyone's access so we have to do another decryption.
+
+    Can you do it?
+
+    Guide: https://ctf.maplebacon.org/crypto_access_2
+
+flags:
+  - "maple{d1V1d3_4ND_c0nQW3R!}"
+
+tags:
+  - progression-3
+  - advanced
+
+files:
+  - static/challenge.py
+  - static/out.txt
+
+requirements:
+  - "access-1"
+
+state: visible
+version: "0.1"

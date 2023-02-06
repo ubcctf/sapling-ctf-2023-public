@@ -1,0 +1,19 @@
+{
+  "name": "lover-on-localhost",
+  "version": "1.0.0",
+  "description": "I'm waiting for my local host",
+  "main": "app.js",
+  "author": "disna",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "puppeteer": "^19.4.1",
+    "morgan": "^1.10.0"
+  }
+}

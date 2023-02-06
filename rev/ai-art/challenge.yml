@@ -1,0 +1,32 @@
+name: ai-art
+author: em
+category: "rev (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+description: |
+  Author: em
+
+  i forgot what prompt made this art please help
+
+flags:
+  - "maple{who_gave_computers_the_right?}"
+
+tags:
+  - progression-3
+  - beginner
+
+files:
+  - static/art
+  - static/art.txt
+
+requirements:
+  - "compost"
+
+state: visible
+version: "0.1"

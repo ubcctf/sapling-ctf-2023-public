@@ -1,0 +1,27 @@
+ijncn usw gkhl gkn psipj skr ijsi usw psipj-22, ujmpj wfnpmdmnr ijsi s pgkpnck dgc gkn'w guk wsdnil mk ijn dspn gd rskoncw ijsi uncn cnsh skr mzznrmsin usw ijn fcgpnww gd s csimgksh zmkr. gcc usw pcsvl skr pgbhr an ocgbkrnr. shh jn jsr ig rg usw swq; skr sw wggk sw jn rmr, jn ugbhr kg hgkonc an pcsvl skr ugbhr jstn ig dhl zgcn zmwwmgkw. gcc ugbhr an pcsvl ig dhl zgcn zmwwmgkw skr wskn md jn rmrk'i, abi md jn usw wskn, jn jsr ig dhl ijnz. md jn dhnu ijnz, jn usw pcsvl skr rmrk'i jstn ig; abi md jn rmrk'i uski ig, jn usw wskn skr jsr ig. lgwwscmsk usw zgtnr tncl rnnfhl al ijn sawghbin wmzfhmpmil gd ijmw phsbwn gd zsfhn{wmzfhn_wbawimibin} skr hni gbi s cnwfnpidbh ujmwihn.
+a -> s
+b -> a
+c -> p
+d -> r
+e -> n
+f -> d
+g -> o
+h -> j
+i -> m
+j -> e
+k -> q
+l -> h
+m -> z
+n -> k
+o -> g
+p -> f
+q -> x
+r -> c
+s -> w
+t -> i
+u -> b
+v -> t
+w -> u
+x -> y
+y -> l
+z -> v

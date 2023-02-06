@@ -1,0 +1,25 @@
+name: netcat
+author: Vie
+category: general
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+connection_info: nc nc.ctf.maplebacon.org 1337
+
+description: |
+  Author: Vie
+
+  This is a tutorial for foundational netcat basics!
+flags:
+  - "maple{netcat_stands_for_network_kitty}"
+
+tags:
+  - beginner
+
+state: visible
+version: "0.1"

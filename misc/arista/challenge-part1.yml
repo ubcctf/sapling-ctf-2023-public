@@ -1,0 +1,97 @@
+name: "Arista Challenge Part 1"
+author: Arista Networks
+category: sponsor
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "
+**Note: this is part 1 of the Arista Challenge. For this challenge, please submit the secret used to encrypt the authentication traffic.** For example, if the secret is `asecret1234`, please submit the flag `maple{asecret1234}`.
+
+## Foreword
+
+This is a challenge developed by Arista for hiring purposes, so there are a few differences with our usual challenges
+
+1. The flag file will contain a url, wrap that url in `maple{}` and submit that as the flag
+
+2. The challenge involves multiple steps to retrieve the flag. _A few of these steps involve password bruteforce and network scanning_.  
+
+3. All characters within the story are fictional. At no point is it required to research any names found within the challenge
+
+## Challenge description
+
+Several months ago you found a way to gain access to many of the emails going around UBC.
+You started off packet sniffing to perform reconnaissance on the network and found out that
+many of the emails are being sent in plain text! Email is best effort TLS so there must be a
+misconfig somewhere.
+
+
+You spend months digging through emails using regex’s and even a GPT-3 AI to look for
+exciting information. Most of what you uncover is boring stuff: affairs, bribes for better grades, a
+smuggling operation to ship in low quality United States maple syrup and rebrand it as high
+quality Canadian product… One day you find something exciting
+  
+
+—
+
+
+From: m4pl3@10.0.138.178
+
+
+To: Pierre, Olivia
+
+
+Subject: Tustin Jrudeau’s Twitter Account
+  
+
+Olivia,
+
+
+We’ve gone back and forth on this for months. I have the password to PM Jrudeau’s Twitter
+account and I can’t understand why you refuse to make him change it. As proof I sent you that
+DM thread between him and the president of the United States!! I am getting increasingly
+frustrated and am trying to resist the urge to use his account to post rude pictures. As a patriotic
+Canadian this is a national security issue!
+
+
+As proof I have hashed his (very easy to guess!) password and have stored it in a secure
+location. I will send you instructions to access it over a PGP secured channel when you send
+me your private key.
+
+
+At my wit’s end,
+
+
+m4pl3
+—
+
+Finally! Something involving cyber security! The ip address maps to a user server on the
+university network! Intrigued, you begin to investigate…
+
+
+The Arista CTF challenge begins by logging into a bastion host at 3.96.177.188.
+You can ssh on port 65432 to this Linux machine using the following credentials:
+
+
+Username: `saplingctf`
+
+
+Password: `NC<.bb4H$7-9]@TdG]^<`"
+
+connection_info: "ssh -p 65432 saplingctf@3.96.177.188"
+
+flags:
+  - "maple{UniformBravoCharlie}"
+
+tags:
+  - advanced
+
+hints:
+  - "Our spies have told us that m4pl3 loves syrup... in fact, syrup is their password!"
+
+state: visible
+version: "0.1"

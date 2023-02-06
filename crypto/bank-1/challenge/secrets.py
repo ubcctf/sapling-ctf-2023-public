@@ -1,0 +1,1 @@
+FLAG = "maple{4LL_Y0UR_m0NEy_4Re_8eL0Ng_70_u2}"

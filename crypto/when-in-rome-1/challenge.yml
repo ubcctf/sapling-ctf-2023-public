@@ -1,0 +1,31 @@
+name: when-in-rome-1
+author: Arctic
+category: crypto
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+  A famous type of cipher is a substitution cipher, which exchanges each letter of the original message with another message.
+
+  Solving them manually can be quite fun so we wrote an interactive solver for you to solve this challenge, have fun!
+
+  https://ctf.maplebacon.org/crypto_when_in_rome_1
+
+flags:
+  - "maple{simple_substitute}"
+
+tags:
+  - beginner
+
+files:
+  - static/challenge.html
+
+state: visible
+version: "0.1"

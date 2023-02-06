@@ -1,0 +1,1 @@
+FLAG = b"The super secret password that must be kept totally secret is maple{N07_50_5ECReT_5eCreT2}. Make sure no one finds it!"

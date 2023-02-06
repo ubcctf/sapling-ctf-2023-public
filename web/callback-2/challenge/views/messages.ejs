@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <% if (typeof name != "undefined" && typeof phone != "undefined" && typeof messages != "undefined") { %>
+        <h3><%- name %>'s messages</h3>
+        <h2><%= phone %></h2>
+        <% messages.forEach(message => { %>
+        <div>
+            <p><%- message %></p>
+        </div>
+        <% }) %>
+    <% } %>
+    <% if (typeof people != "undefined") { %>
+        <h2>Sops who need help:</h2>
+        <% people.forEach(key => { %>
+        <div>
+            <a href="/admin-panel?key=<%- key %>"><%- key %></p>
+        </div>
+        <% }) %>
+    <% } %>
+</body>
+
+</html>

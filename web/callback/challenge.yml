@@ -1,0 +1,31 @@
+name: callback
+author: disna
+category: "web (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: >
+  Author: Disna#0532
+
+  dont want to call? we can call you back tomorrow if you'd like
+
+connection_info: https://callback.ctf.maplebacon.org
+
+flags:
+  - "maple{un54f3_cl13n7_51d3_r357r1c710n5}"
+
+tags:
+  - progression-1
+  - beginner
+  - web
+
+files:
+  - static/callback.zip
+
+state: visible
+version: "0.1"

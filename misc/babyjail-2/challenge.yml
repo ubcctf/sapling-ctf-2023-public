@@ -1,0 +1,59 @@
+name: "babyjail 2: electric boogaloo"
+author: desp
+category: misc
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: desp
+
+  grats on becoming a free baby! too bad you are instantly caught again :(
+
+  at least only 2 lines of coded were added this time - surely it's not gonna be that bad right?
+
+  to deploy the local testing docker, run the following in the directory with both of the provided files:
+
+  sudo docker build . --tag babyjail2
+
+  sudo docker run --rm -it -t babyjail2
+
+connection_info: nc babyjail-2.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{gc_0r_m3m_dump?}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - pyjail
+  - intermediate
+
+files:
+  - players/babyjail-2.py
+  - players/Dockerfile
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+requirements:
+  - "babyjail"
+
+state: visible
+version: "0.1"

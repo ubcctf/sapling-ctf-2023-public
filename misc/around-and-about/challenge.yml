@@ -1,0 +1,26 @@
+name: around-and-about
+author: apropos
+category: misc
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: apropos\n\nMy friend texted me an image and asked me to \"meet him here\". Unfortunately, I have no idea where \"here\" is, and my friend is a terrible photographer! Can you help me out?\n\nWait, what do you mean this isn't the kind of image you were expecting?"
+
+flags:
+  - "maple{ctf_in_r34l_l1f3_??_?}"
+
+tags:
+  - easy
+  - osint
+  - forensics
+
+files:
+  - static/android-NEW.img
+
+state: visible
+version: "0.1"

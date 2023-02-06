@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Welcome</title>
+    </head>
+    <script src="index.js"></script>
+    <body>
+        <div id="container">
+            <section class="banner"><h1>Pwn Group</h1></section>
+            <section class="navigation-bar">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/help">Help</a>
+            </section>
+            <section id="main-page-container">
+                <div id="admin-panel">
+                    <a href="/admin-panel">Admin panel</a>
+                </div>
+                <div id="news">
+                    <div id="news-title">
+                        <h2>Payouts</h2>
+                    </div>
+                    <div id="article-container">
+                        <% Object.keys(articles).forEach(article => { %>
+                            <div class="article">
+                                <h3><%= article %></h3>
+                                <p>🍁<%= articles[article] %></p>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+                <sliding-popup>
+                    <div
+                        class="vertical-aligned"
+                        slot="popup"
+                        style="width: 15em"
+                    >
+                        <h3 style="text-align: center">
+                            Got pwned by us? Talk to our representative
+                            <a href="/help">here</a>
+                        </h3>
+                        <p style="text-align: center">
+                            or leave a message for us to look at later
+                        </p>
+                        <p style="text-align: center">
+                            (we only accept maple leaves as payment)
+                        </p>
+                        <form
+                            class="vertical-aligned"
+                            action="/leave-message"
+                            method="post"
+                            id="leave-message"
+                        >
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="name (max 12 chars)"
+                                maxlength="12"
+                            />
+                            <input
+                                type="text"
+                                name="phone"
+                                placeholder="phone (max 12 chars)"
+                                maxlength="12"
+                            />
+                            <input
+                                type="text"
+                                name="message"
+                                placeholder="message (max 20 chars)"
+                                maxlength="20"
+                            />
+                            <button
+                                type="submit"
+                                onsubmit="window.location += '#success'"
+                            >
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </sliding-popup>
+            </section>
+            <section class="banner">
+                <h4>We'll contact you soon~</h4>
+            </section>
+        </div>
+    </body>
+</html>

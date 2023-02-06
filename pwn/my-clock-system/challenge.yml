@@ -1,0 +1,48 @@
+name: "my clock system"
+author: aynakeya
+category: pwn
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: aynakeya\n\nJust another service used to get the time, but this one seems to be broken. I have to set the current time before I can check the time, otherwise the time is not accurate."
+
+connection_info: nc my-clock-system.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{1_by73_0v3rfl0w_ovo}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  # - progression (if progssion)
+  - beginner
+
+files:
+  - static/main.c
+  - static/vuln
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

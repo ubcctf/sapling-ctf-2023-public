@@ -1,0 +1,5 @@
+The provided file is a dump of an Android filesystem, packaged up as a `.img`. This may be mounted and directly inspected, or binwalk'd to extract a single photograph of a lamppost: taken by the "bad photographer" in question. 
+
+The file includes standard metadata from a phone camera app, which includes exact GPS coordinates to around a meter. (Yeah. Most software, Discord included, will strip this before sending, but...) These GPS coordinates point to a location outside and right by the ICICS building.
+
+That location is the location of the lamppost in question, which had the flag taped to its base.

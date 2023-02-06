@@ -1,0 +1,34 @@
+name: hintbot
+author: disna
+category: web
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+connection_info: http://hintbot.ctf.maplebacon.org
+
+description: >
+  Author: Disna#0532
+
+  We set up a hintbot for folks who are unsure if they're stuck in a rabbit hole or not
+
+  Note that the flag in this challenge looks something like "maple XXX XXXXX XXXX XXXX" (where Xs are lowercase alphabetical characters, divided into an arbitrary number of words, each of arbitrary length)
+
+  To submit this, you should translate it to "maple{XXX_XXXXX_XXXX_XXXX}"
+
+flags:
+  - "maple{i_got_robert_on_my_team}"
+
+tags:
+  - intermediate
+  - misc
+
+files:
+  - static/hintbot.zip
+
+state: visible
+version: "0.1"

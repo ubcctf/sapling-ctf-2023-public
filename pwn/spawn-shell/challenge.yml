@@ -1,0 +1,48 @@
+name: spawn-shell
+author: aynakeya
+category: pwn
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: aynakeya\n\nits simple, spawn a shell and get the flag."
+
+connection_info: nc spawn-shell.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{bin_sh_cat_flag_txt}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  # - progression (if progssion)
+  - beginner
+
+files:
+  - static/main.c
+  - static/vuln
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

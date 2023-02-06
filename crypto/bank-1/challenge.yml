@@ -1,0 +1,43 @@
+name: bank-1
+author: Arctic
+category: "crypto (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+  Based on the lead you gave us we've tracked down a secret exchange that we believe our suspects have been using. 
+
+  There appears to be some special access that we need to purchase, but we can't use our funds without raising suspicion. 
+
+  Can you find a way to redirect their funds into our account so we can gain access?
+
+  Guide: https://ctf.maplebacon.org/crypto_bank_1
+
+connection_info: nc bank-1.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{4LL_Y0UR_m0NEy_4Re_8eL0Ng_70_u2}"
+
+tags:
+  - progression-break-1
+  - intermediate
+
+files:
+  - deployment/challenge/challenge.py
+  - solve/template.py
+requirements:
+  - "interception"
+
+hints:
+  - "What happens if we give a bogus `recipient_id`? Does the system have any problem with it?"
+  - "What does it mean if we see a ciphertext block we've seen before?"
+
+state: visible
+version: "0.1"

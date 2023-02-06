@@ -1,0 +1,1 @@
+zip -j beehive.zip ../hosted/data/index.php ../hosted/data/login.php

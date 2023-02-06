@@ -1,0 +1,63 @@
+name: "EAS: filtered"
+author: aynakeya
+category: pwn
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: aynakeya
+
+  Echo As Service
+
+  echo is a pretty useful function, so I made echo as a service!
+  
+  Changelog:
+
+  v0.5: How did these hackers get into my system?!?!? I'll add a filter to prevent this from happening again.
+
+  v0.1: add a while loop to my service.
+
+  v0.0: echo service prototype.
+  
+  Note: the libc library might be necessary in solving the challenge remotely. Remember to compare your local solution and change what's needed!"
+
+connection_info: nc echo-filtered.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{P1rn7f_L34K_3v3rY7h1N}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  # - progression (if progssion)
+  - intermediate
+
+files:
+  - static/vuln
+  - static/libc.so.6
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+requirements:
+  - "EAS: basic"
+
+state: visible
+version: "0.1"

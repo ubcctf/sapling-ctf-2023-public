@@ -1,0 +1,50 @@
+name: "Random generator"
+author: aynakeya
+category: pwn
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: aynakeya\n\nWe have developed a secure random number generator service using stack value!
+
+Hint: you need more iteration"
+
+connection_info: nc random-generator.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{n0t_cOmpI3t3ly_r8n6om}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  # - progression (if progssion)
+  - beginner
+
+files:
+  - static/main.c
+  - static/rand_gen
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

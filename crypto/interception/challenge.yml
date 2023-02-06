@@ -1,0 +1,33 @@
+name: interception
+author: Arctic
+category: "crypto (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+  Intelligence has been successfully intercepting messages by the threat actor APT74 for the last few weeks but their messages are encrypted so we haven't been able to decode any of them. 
+
+  Until now! By a stroke of luck we came across what we believe to be the key on a slip of paper discarded by one of the suspects. Your job is to set up your coding environment to run the decryption so we can proceed with the investigation
+
+  Our last cryptographer left you some advice here: https://ctf.maplebacon.org/crypto_interception
+
+flags:
+  - "maple{5upeR_5ECReT_ExCh4nGE}"
+
+tags:
+  - progression-1
+  - beginner
+
+files:
+  - static/key.jpg
+  - static/messages.txt
+
+state: visible
+version: "0.1"

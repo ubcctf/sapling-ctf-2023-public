@@ -1,0 +1,30 @@
+name: lover on localhost
+author: disna
+category: web
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+connection_info: https://lover-on-localhost.ctf.maplebacon.org
+
+description: >
+  Author: Disna#0532
+
+  I'm waiting for my local host
+
+flags:
+  - "maple{a_dQw4w9WgXcQ_for_you}"
+
+tags:
+  - hard
+  - web
+
+files:
+  - static/lover-on-localhost.zip
+
+state: visible
+version: "0.1"

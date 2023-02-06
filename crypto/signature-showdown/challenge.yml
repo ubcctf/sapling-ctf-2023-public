@@ -1,0 +1,46 @@
+name: Signature Showdown
+author: vEvergarden
+category: crypto
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: vEvergarden\n\nBaba is you. Signature is forged. Flag is win."
+
+connection_info: nc rsa.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{b3_c4r3ful_w1th_s1gnatur3s!!}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - beginner
+
+files:
+  - deployment/challenge/server.py
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

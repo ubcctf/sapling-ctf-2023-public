@@ -1,0 +1,28 @@
+name: "Getting a Working Linux environment"
+author: "Dontmindme"
+category: general
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: Dontmindme\n\nWelcome to SaplingCTF! This challenge ensures that you have a Linux environment to start doing challenges in. For many of you, you know exactly what this means and know you have a good environment to work in. If so, great! Just download and run the file below, there's literally no tricks here.
+
+However, if you don't know if you have a Linux environment, download one of the text files below:"
+
+flags:
+  - "maple{this_1s_a_fl4g}"
+
+tags:
+  - beginner
+
+files:
+  - static/flag
+  - static/microsoft_text_guide.md
+  - static/macos_text_guide.md
+
+state: visible
+version: "0.1"

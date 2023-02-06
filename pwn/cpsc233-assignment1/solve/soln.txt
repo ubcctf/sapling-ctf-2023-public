@@ -1,0 +1,6 @@
+add rdi,rsi
+add rdi,rdx
+mov rax,rdi
+ret
+
+4801F74801D74889F8C3

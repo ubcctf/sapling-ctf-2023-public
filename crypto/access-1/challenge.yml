@@ -1,0 +1,38 @@
+name: access-1
+author: Arctic
+category: "crypto (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: Arctic
+
+  Good job finding the secret bank exchange that APT-74 has been using, our next step will be to gain access and infiltrate their operations.
+
+  We sent an operative to attempt to gain access and they were told they needed decrypt their message to gain access. Luckily for you they also managed to snag a copy of the source code used to generate the key and message.
+
+  Do you think you can figure out what the key is?
+
+  Guide: https://ctf.maplebacon.org/crypto_access_1
+
+flags:
+  - "maple{N0T_3N0U9H_81T5!}"
+
+tags:
+  - progression-2
+  - beginner
+
+files:
+  - static/challenge.py
+  - static/out.txt
+
+requirements:
+  - "interception"
+
+state: visible
+version: "0.1"

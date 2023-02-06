@@ -1,0 +1,28 @@
+name: Java Windows Terminal
+author: vEvergarden
+category: crypto
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: vEvergarden\n\nWe found this hidden website attached with a note, but we can't find our flag! The note said something about JWTs... Java Windows Terminal? Jim Wolf Technology? 
+
+Either way, we also found a script lying around on the computer. Maybe you'll know what to do with it..."
+
+connection_info: http://jwt.ctf.maplebacon.org:8000/
+
+flags:
+  - "maple{f3rm4t_!n_7h3_m0d3rn_w0r1d}"
+tags:
+  - intermediate
+
+files:
+  - static/generate_keys.py
+  - static/public.key
+
+state: visible
+version: "0.1"

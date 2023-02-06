@@ -1,0 +1,62 @@
+name: "CPSC233 Final"
+author: aynakeya
+category: "pwn (progression)"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: |
+  Author: aynakeya
+
+  CPSC233 FINAL EXAM INSTRUCTION
+
+  Wow. You made to the final! 
+
+  This final would be a cumulative final exam, please study everything we've learned in this course.
+
+  Note: 
+
+  1. the vulnerable binary is slightly different from the source file. If there are some conflict between source file and binary, binary shall prevail.
+
+  2. we recommend completing EAS: Basic before trying this challenge.
+
+connection_info: nc cpsc233-final.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{r34d_5h3llc0d3_u51n6_5h3llc0d3}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - progression-6
+  - advanced
+
+files:
+  - static/main.c
+  - static/starter.py
+  - static/cpsc233_final
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+requirements:
+  - "CPSC233 Assignment 3"
+
+state: visible
+version: "0.1"

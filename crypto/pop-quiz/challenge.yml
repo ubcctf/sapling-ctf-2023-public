@@ -1,0 +1,48 @@
+name: Pop Quiz
+author: vEvergarden
+category: crypto
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30 # based on last year sapling's solve counts
+  minimum: 50
+
+description: "Author: vEvergarden\n\nA small pop quiz to get you started!
+
+Try out the general skill challenges to learn some Python basics and how to connect to the service with netcat."
+
+connection_info: nc pop-quiz.ctf.maplebacon.org 1337
+
+flags:
+  - "maple{0nt0-7h3-n3xt!}"
+  # can be set to case insensitive or regex
+  # - {
+  #   type: "static",
+  #   content: "maple{flag}",
+  #   data: "case_insensitive"
+  # }
+  # - {
+  #   type: "regex",
+  #   content: "maple{.*}"
+  # }
+
+tags:
+  - beginner
+
+# files:
+#   - static/file-to-be-released-with-challenge
+
+# hints:
+#   - {
+#     content: "hint contents",
+#     cost: 50
+#   }
+#   - free hint
+
+# requirements:
+#   - "prerequisite challenge name"
+
+state: visible
+version: "0.1"

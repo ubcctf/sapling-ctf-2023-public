@@ -1,0 +1,27 @@
+name: el-zorro
+author: Vie
+category: web
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+connection_info: http://el-zorro.ctf.maplebacon.org:9080
+description: |
+  Author: Vie
+
+  Categorized all my favourite foxes in media. Do you have any?
+flags:
+  - "maple{but_n0bo0dy_ev3r_a5ks_how_tHe_fOX_f33ls}"
+
+tags:
+  - intermediate
+
+files:
+  - static.zip
+
+state: visible
+version: "0.1"

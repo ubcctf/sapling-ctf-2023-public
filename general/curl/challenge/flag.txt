@@ -1,0 +1,4 @@
+Good job! You now have a good foundational basis for curl. Here is your flag:
+
+
+maple{cuwurl_is_so_fun}

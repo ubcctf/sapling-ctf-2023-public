@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    height: 300%;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container->section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-aligned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#admin-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#main-page-container {
+    position: relative;
+    height: auto;
+    background-image: linear-gradient(to bottom, #000, #f00);
+}
+
+#news-title {
+    width: 15%;
+    height: 60px;
+    border: 1px solid #ccc;
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%, 0 0);
+    background-image: linear-gradient(to right, #f1f1f1, rgba(255, 3, 3, 0.773));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#article-container {
+    margin-left: 100px;
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+.article {
+    font: 20px 'Lobster', cursive;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(154, 236, 252);
+    clip-path: polygon(0 0, 100% 0, 100% 18%, 65% 100%, 35% 100%, 0 18%);
+}
+
+.article > * {
+    margin: 5px;
+    text-align: center;
+}
+
+.article > h3 {
+    height: 10%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.article > p {
+    height: 90%;
+}
+
+/* align all buttons at the center of the bar */
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+/* for each child of navigation bar, surround it with a border */
+.navigation-bar > * {
+    border: 1px solid #ccc;
+    align-self: center;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.banner {
+    background-image: linear-gradient(to right, #f1f1f1, rgb(127, 163, 235));
+    width: 100%;
+    height: 100px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-align: center;
+    font: 20px 'Pacifico', sans-serif;
+}
+
+.banner > table {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}

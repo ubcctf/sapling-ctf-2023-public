@@ -1,0 +1,28 @@
+name: smc
+author: kz
+category: rev
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+description: |
+  Author: kz
+
+  I heard Ghidra is a pretty neat tool but you can't reverse what you can't see.
+
+flags:
+  - "maple{1s_Th1s_53lf_Modify1ng_C0d3??}"
+
+tags:
+  - dynamic-analysis
+  - intermediate
+
+files:
+  - static/smc
+
+state: visible
+version: "0.1"

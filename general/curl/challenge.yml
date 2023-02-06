@@ -1,0 +1,25 @@
+name: curl
+author: Vie
+category: general
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 30
+  minimum: 50
+
+connection_info: "curl http://curl.ctf.maplebacon.org:1337"
+
+description: |
+  Author: Vie
+
+  This is a tutorial for foundational curl basics!
+flags:
+  - "maple{cuwurl_is_verry_fun}"
+
+tags:
+  - beginner
+
+state: visible
+version: "0.1"

@@ -1,0 +1,1 @@
+No solve script for this one. All you need to do is to break at the memcmp towards the end of main and the flag is in plaintext.

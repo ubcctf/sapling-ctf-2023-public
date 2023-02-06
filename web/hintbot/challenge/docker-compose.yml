@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  hintbot:
+    container_name: hintbot
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 1337:1337
+
+
